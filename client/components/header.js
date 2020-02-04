@@ -3,46 +3,16 @@ import '../CSS/main';
 import '../CSS/media';
 import '../CSS/login';
 import '../CSS/logout';
-import Home from '../main_home';
-import App from '../main_cs';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
 
-export default function Header() {
+
+const Header = () => {
   return (
-    <Router>
-      <div>
+    <header>
         <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/main_cs">Course Search</Link>
-            </li>
-          </ul>
+            <p>Molloy Advising</p>
         </nav>
-        <Switch>
-          <Route path="/main_cs">
-            <AppHeader />
-          </Route>
-          <Route path="/">
-            <HomeHeader />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
+    </header>
   );
-}
+};
 
-function HomeHeader() {
-  return <h2>Home</h2>;
-}
-
-function AppHeader() {
-  return <h2>Course Search</h2>;
-}
+export default Header;

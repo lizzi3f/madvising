@@ -47,18 +47,23 @@ h2 {
 } /*clear floats after columns*/
 
 table {
+    margin:             10px;
     font-family:        hiragino sans, helvetica, swiss, arial, sans-serif;
     border-collapse:    collapse;
     width:              100%;
 }
 
-td, th {
+#schedule td {
     border:             1px solid #A9A9A9;
     text-align:         left;
     padding:            10px;
 }
 
-#schedule tr:nth-child(even) {
+#title {
+    font-weight:        bold;
+}
+
+#schedule td:nth-child(even) {
     background-color:   #F8F8F8;
 }
 
@@ -68,7 +73,7 @@ td, th {
     width:              80%;
 }
 
-#courseSearchTable tr td {
+#courseSearchTable td p {
     text-align:         right;
 }
 
