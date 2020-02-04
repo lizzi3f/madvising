@@ -26,11 +26,11 @@ const App = () => {
                     </ul>
                 </nav>
                 <Switch>
-                    <Route path="MainCourseSearch">
-                        <MainCourseSearch />
-                    </Route>
-                    <Route path="/">
+                    <Route exact path="/">
                         <Home />
+                    </Route>
+                    <Route exact path="MainCourseSearch">
+                        <MainCourseSearch />
                     </Route>
                 </Switch>
             </div>
